@@ -3,7 +3,7 @@ namespace Erbilen\Database;
 
 abstract class CrudableAdapter implements CrudableInterface
 {
-    private $basicDB;
+    protected $basicDB;
     
     public function __construct(BasicDB $connection){
         $this->basicDB = $connection;
